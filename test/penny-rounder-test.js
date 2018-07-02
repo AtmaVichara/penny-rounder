@@ -23,7 +23,7 @@ describe("Penny Rounder Test", () => {
       it("should split total and return array of split values", () => {
         assert.deepEqual(PennyRounder.moneySplitter(800.00), [266.66, 266.67, 266.67])
         assert.deepEqual(PennyRounder.moneySplitter(850.00), [283.34, 283.33, 283.33])
-        assert.deepEqual(PennyRounder.moneySplitter(740.00), [283.34, 283.33, 283.33])
+        assert.deepEqual(PennyRounder.moneySplitter(740.00), [411.33, 411.33, 411.33])
       })
     })
   })
