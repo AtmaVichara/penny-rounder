@@ -4,6 +4,7 @@ const assert = require("chai").assert;
 describe("Penny Rounder Test", () => {
 
   describe("Methods", () => {
+
     describe("totalSplitter() functionality", () => {
       it("should split total into three numbers, and return array of split", () => {
         assert.deepEqual(PennyRounder.totalSplitter(800.00), [266.67, 266.67, 266.67])
@@ -22,6 +23,7 @@ describe("Penny Rounder Test", () => {
       it("should split total and return array of split values", () => {
         assert.deepEqual(PennyRounder.moneySplitter(800.00), [266.66, 266.67, 266.67])
         assert.deepEqual(PennyRounder.moneySplitter(850.00), [283.34, 283.33, 283.33])
+        assert.deepEqual(PennyRounder.moneySplitter(740.00), [283.34, 283.33, 283.33])
       })
     })
   })
